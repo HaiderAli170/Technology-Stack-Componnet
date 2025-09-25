@@ -1,79 +1,92 @@
-🚀 Technology Stack Component
+<div align="center">
 
-A reusable Technology Stack component built with Next.js
-, Tailwind CSS
-, Sera UI
-, and GSAP
-.
-Easily showcase the technologies your project uses in a clean, animated, and responsive design.
+# 🚀 Technology Stack Component
 
-📦 Features
+**A reusable Technology Stack component built with Next.js, Tailwind CSS, Sera UI, and GSAP.**  
+_Easily showcase the technologies your project uses in a clean, animated, and responsive design._
 
-⚡ Built with Next.js 14+
+![Next.js](https://img.shields.io/badge/Next.js-14+-black?logo=nextdotjs)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-blue?logo=tailwindcss)
+![Sera UI](https://img.shields.io/badge/Sera%20UI-purple?logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA1NiA1NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIyOCIgY3k9IjI4IiByPSIyOCIgZmlsbD0iI0YwRGYwRCIvPjwvc3ZnPg==)
+![GSAP](https://img.shields.io/badge/GSAP-Animation-5fd400?logo=greensock)
+![Responsive](https://img.shields.io/badge/Responsive-Yes-green)
+![VS Code](https://img.shields.io/badge/VSCode-Recommended-blue?logo=visualstudiocode)
 
-🎨 Styled using Tailwind CSS
+</div>
 
-🧩 Powered by Sera UI components
+---
 
-🎞️ Smooth animations powered by GSAP
+## 📦 Features
 
-📱 Fully responsive and customizable
+- ⚡ **Next.js 14+**
+- 🎨 **Tailwind CSS styling**
+- 🧩 **Sera UI components**
+- 🎞️ **Smooth GSAP animations**
+- 📱 **Fully responsive & customizable**
+- 💻 **Works seamlessly in Visual Studio Code**
 
-💻 Works seamlessly in Visual Studio Code
+---
 
-🛠️ Installation
-1. Clone Repository
-git clone https://github.com/your-username/technology-stack.git
-cd technology-stack
+## 🛠️ Installation
 
-2. Install Dependencies
+1. **Clone Repository**
+    ```bash
+    git clone https://github.com/your-username/technology-stack.git
+    cd technology-stack
+    ```
 
-Make sure you have Node.js (>=18) installed.
+2. **Install Dependencies**
 
-npm install
-# or
-yarn install
-# or
-pnpm install
+    Make sure you have Node.js (>=18) installed.
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
-3. Install Tailwind CSS
+3. **Install Tailwind CSS**
 
-If your project doesn’t already have Tailwind set up:
+    If your project doesn’t already have Tailwind set up:
+    ```bash
+    npx tailwindcss init -p
+    ```
 
-npx tailwindcss init -p
+    Update your `tailwind.config.js`:
+    ```js
+    module.exports = {
+      content: [
+        "./src/**/*.{js,ts,jsx,tsx}",
+        "./node_modules/@seraui/components/**/*.{js,ts,jsx,tsx}"
+      ],
+      theme: { extend: {} },
+      plugins: [],
+    };
+    ```
+    👉 Alternatively, follow [Sera UI installation guide](https://seraui.com/docs/installation).
 
+4. **Install Sera UI**
+    ```bash
+    npm install @seraui/components
+    # or
+    yarn add @seraui/components
+    ```
 
-Update your tailwind.config.js:
+5. **Install GSAP (Required for Animations)**
+    ```bash
+    npm install gsap
+    # or
+    yarn add gsap
+    ```
 
-module.exports = {
-  content: [
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/@seraui/components/**/*.{js,ts,jsx,tsx}"
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+---
 
+## ⚙️ Usage
 
-👉 Alternatively, follow Sera UI installation guide
-.
+Import and use the `TechnologyStack` component in your Next.js project:
 
-4. Install Sera UI
-npm install @seraui/components
-# or
-yarn add @seraui/components
-
-5. Install GSAP (Required for Animations)
-npm install gsap
-# or
-yarn add gsap
-
-⚙️ Usage
-
-Import and use the TechnologyStack component in your Next.js project:
-
+```js
 import { TechnologyStack } from "@/components/TechnologyStack";
 
 export default function Home() {
@@ -83,31 +96,39 @@ export default function Home() {
     </main>
   );
 }
+```
 
-👨‍💻 Development (VS Code Recommended)
+---
 
-Open in Visual Studio Code
+## 👨‍💻 Development (VS Code Recommended)
 
-Install extensions:
+- **Open in Visual Studio Code**
+- **Install extensions:**
+    - Tailwind CSS IntelliSense
+    - Prettier (Code Formatter)
+- **Run dev server:**
+    ```bash
+    npm run dev
+    ```
+- Visit [http://localhost:3000](http://localhost:3000) to view the component.
 
-Tailwind CSS IntelliSense
+---
 
-Prettier (Code Formatter)
+## 📸 Preview
 
-Run dev server:
+<div align="center">
+  <img width="944" height="452" alt="Technology Stack Preview" src="https://github.com/user-attachments/assets/3049a749-26fc-4674-a588-5a02e5985fcb" />
+</div>
 
-npm run dev
+---
 
+## 📝 Contribution
 
-Visit http://localhost:3000
- to view the component.
+Pull requests are welcome!  
+For major changes, please open an issue first to discuss what you’d like to change.
 
-📸 Preview
-<img width="944" height="452" alt="image" src="https://github.com/user-attachments/assets/3049a749-26fc-4674-a588-5a02e5985fcb" />
-📝 Contribution
+---
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+## 👤 Author
 
-👤 Author
-
-Haider Ali
+**Haider Ali**
