@@ -1,10 +1,11 @@
-Technology Stack Component
+🚀 Technology Stack Component
 
 A reusable Technology Stack component built with Next.js
 , Tailwind CSS
-, and Sera UI
+, Sera UI
+, and GSAP
 .
-Easily showcase the technologies your project uses in a clean, responsive design.
+Easily showcase the technologies your project uses in a clean, animated, and responsive design.
 
 📦 Features
 
@@ -13,6 +14,8 @@ Easily showcase the technologies your project uses in a clean, responsive design
 🎨 Styled using Tailwind CSS
 
 🧩 Powered by Sera UI components
+
+🎞️ Smooth animations powered by GSAP
 
 📱 Fully responsive and customizable
 
@@ -53,12 +56,19 @@ module.exports = {
   plugins: [],
 };
 
-or Go to Sera Ui and Install 
+
+👉 Alternatively, follow Sera UI installation guide
+.
 
 4. Install Sera UI
 npm install @seraui/components
 # or
 yarn add @seraui/components
+
+5. Install GSAP (Required for Animations)
+npm install gsap
+# or
+yarn add gsap
 
 ⚙️ Usage
 
@@ -69,7 +79,7 @@ import { TechnologyStack } from "@/components/TechnologyStack";
 export default function Home() {
   return (
     <main className="flex items-center justify-center h-screen">
-      <TechnologyStack />
+      <TechnologyStack/>
     </main>
   );
 }
@@ -92,13 +102,12 @@ npm run dev
 Visit http://localhost:3000
  to view the component.
 
-📸 Preview (Optional)
-
+📸 Preview
 <img width="944" height="452" alt="image" src="https://github.com/user-attachments/assets/3049a749-26fc-4674-a588-5a02e5985fcb" />
-
-
 📝 Contribution
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
+👤 Author
 
 Haider Ali
